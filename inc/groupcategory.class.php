@@ -84,7 +84,7 @@ class PluginGroupcategoryGroupcategory extends CommonDBTM {
 
         if (!is_array($params['item'])) {
             switch ($params['item']->getType()) {
-                case 'Group':
+                case 'Entity':
                     plugin_groupcategory_post_show_group($params['item']);
                     break;
 
@@ -103,7 +103,7 @@ class PluginGroupcategoryGroupcategory extends CommonDBTM {
     static function post_item_form($params) {
         if (!is_array($params['item'])) {
             switch ($params['item']->getType()) {
-                case 'Group':
+                case 'Entity':
                     plugin_groupcategory_post_show_group($params['item']);
                     break;
 
