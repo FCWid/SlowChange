@@ -25,8 +25,8 @@ function plugin_version_groupcategory()
     return [
       'name' => 'GroupCategory',
       'version' => PLUGIN_GROUPCATEGORY_VERSION,
-      'author' => '<a href="https://www.probesys.com">PROBESYS</a>',
-      'homepage' => 'https://github.com/Probesys/glpi-plugins-groupcategory',
+      'author' => 'FLORIAN',
+      'homepage' => 'https://github.com/FCWid/SlowChange',
       'license' => 'GPLv2+',
       'minGlpiVersion' => PLUGIN_GROUPCATEGORY_GLPI_MIN_VERSION,
     ];
