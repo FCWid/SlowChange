@@ -26,14 +26,12 @@
          ]]></cs>
       </long>
    </description>
-   <homepage>https://github.com/Probesys/glpi-plugins-groupcategory</homepage>
-   <download>https://github.com/Probesys/glpi-plugins-groupcaterogy/releases</download>
-   <issues>https://github.com/Probesys/glpi-plugins-groupcaterogy/issues</issues>
-   <readme>https://github.com/Probesys/glpi-plugins-groupcaterogy/README.md</readme>
+   <homepage>https://github.com/FCWid/SlowChange</homepage>
+   <download>https://github.com/FCWid/SlowChange/releases</download>
+   <issues>https://github.com/FCWid/SlowChange/issues</issues>
+   <readme>https://github.com/FCWid/SlowChange/README.md</readme>
    <authors>
-      <author>PROBESYS</author>
-      <author>Pierre de Vésian</author>
-      <author>Philippe GODOT</author>
+      <author>FLORIAN</author>
    </authors>
    <versions>
       <version>
