@@ -211,8 +211,8 @@ function plugin_groupcategory_group_update(Group $group)
 
         if ($allowed_categories_ids != $selected_categories_ids) {
             $group_category = new PluginGroupcategoryGroupcategory();
-            //$exists = $group_category->getFromDBByQuery("WHERE TRUE AND group_id = " . $group->getId());
-            $exists = $group_category->getFromDBByCrit(["group_id" => $group->getId()]);
+            $exists = $group_category->getFromDBByQuery("WHERE TRUE AND entity_id = " . $group->getId());
+            //$exists = $group_category->getFromDBByCrit(["group_id" => $group->getId()]);
             $group_update_params = [
                 'group_id' => $group->getId(),
                 'category_ids' => $allowed_categories_ids,
