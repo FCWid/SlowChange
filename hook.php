@@ -51,7 +51,7 @@ function plugin_groupcategory_uninstall()
  *
  * @param Group $group
  */
-function plugin_groupcategory_post_show_group(Group $group)
+function plugin_groupcategory_post_show_group(Entity $group)
 {
     if ($group->getId() > 0) {
         $categories = PluginGroupcategoryGroupcategory::getAllCategories();
@@ -201,7 +201,7 @@ function plugin_groupcategory_post_show_group(Group $group)
  *
  * @param Group $group
  */
-function plugin_groupcategory_group_update(Group $group)
+function plugin_groupcategory_group_update(Entity $group)
 {
     if (isset($group->input['groupcategory_allowed_categories'])) {
         $allowed_categories_ids = trim($group->input['groupcategory_allowed_categories']);
