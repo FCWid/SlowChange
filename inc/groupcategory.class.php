@@ -30,7 +30,7 @@ class PluginGroupcategoryGroupcategory extends CommonDBTM {
      * @param  Group $group
      * @return array
      */
-    public static function getSelectedCategoriesForGroup(Group $group) {
+    public static function getSelectedCategoriesForGroup(Entity $group) {
         $group_category = new PluginGroupcategoryGroupcategory();
 
         if ($group_category->getFromDBByCrit(["group_id" => $group->getId()])) {
