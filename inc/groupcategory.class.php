@@ -61,7 +61,8 @@ class PluginGroupcategoryGroupcategory extends CommonDBTM {
         $user = new User();
 
         if ($user->getFromDB($user_id)) {
-            $user_groups = Group_User::getUserGroups($user_id);
+            //$user_groups = Group_User::getUserGroups($user_id);
+            $user_groups = Profile_User::getUserEntities($user_id, true);
 
             foreach ($user_groups as $group_data) {
                 $group = new Group();
