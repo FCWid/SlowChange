@@ -46,7 +46,7 @@ function plugin_init_groupcategory()
         //$PLUGIN_HOOKS['post_show_item'][PLUGIN_GROUPCATEGORY_NAMESPACE] = ['PluginGroupcategoryGroupcategory', 'post_show_item'];
         $PLUGIN_HOOKS['post_item_form'][PLUGIN_GROUPCATEGORY_NAMESPACE] = ['PluginGroupcategoryGroupcategory', 'post_item_form'];
         $PLUGIN_HOOKS['pre_item_update'][PLUGIN_GROUPCATEGORY_NAMESPACE] = [
-          'Group' => 'plugin_groupcategory_group_update',
+          'Entity' => 'plugin_groupcategory_group_update',
         ];
     }
 }
