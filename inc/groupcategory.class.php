@@ -33,7 +33,7 @@ class PluginGroupcategoryGroupcategory extends CommonDBTM {
     public static function getSelectedCategoriesForGroup(Entity $group) {
         $group_category = new PluginGroupcategoryGroupcategory();
 
-        if ($group_category->getFromDBByCrit(["group_id" => $group->getId()])) {
+        if ($group_category->getFromDBByCrit(["entity_id" => $group->getId()])) {
             $category_ids = explode(', ', $group_category->fields['category_ids']);
             $all_categories = self::getAllCategories();
             $selected_categories = [];
